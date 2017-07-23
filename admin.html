@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/normalize.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style>
+#basic-info input{
+	margin:5px;
+	margin-left:0px;
+}
+#spacing{
+	padding:15px;
+	padding-top:5px;
+}
+
+#basicinfosection {
+	display:flex;
+}
+#basicinfosection textarea{
+	margin-left:50px;
+}
+#main {
+	width:40%;
+	margin-left:auto;
+	margin-right:auto;
+	border:1px solid;
+	background:#b0bec5;
+}
+body{
+	background:#90caf9;
+}
+</style>
+</head>
+<body>
+<div id="main">
+<div id="spacing">
+<form action="/action_page.php">
+
+  Basic info &emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+  Contact info &emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+  About me<br/><br/><br/>
+  <section id="basicinfosection">
+  
+  <div id="basic-info">
+  <input id="name" type="text" value="name" pattern="[A-Za-z]{10}" >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input id="phone" type="text" value="phone" pattern="[A-Za-z]{10}" >
+  <br>
+  <input id="lastName" type="text" value="last_name" pattern="[A-Za-z]{10}" >    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input id="address" type="text" value="address" pattern="[A-Za-z]{10}" >
+ <br>
+ <input id="title" type="text" value="title" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input id="email" type="text" value="email" pattern="[A-Za-z]{10}" >
+ </div>
+ 
+ <textarea id="aboutMe" rows="10" cols="30"> </textarea>
+ </section>
+ </div>
+  <br/>
+  <br/>
+  <br/>
+  <hr/> 
+  <br/>
+  <div id="spacing">
+  Social networks
+    <br/>
+    <br/>
+    
+  <input id="facebook" type="text" value="Facebook link" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input id="webLink" type="text" value="Website link" pattern="[A-Za-z]{10}" >
+  <br/>
+  <br/>
+  <input id="linkedin" type="text" value="Linkedin link" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input id="medium" type="text" value="Medium link" pattern="[A-Za-z]{10}" >
+  <br/>
+  <br/>
+  <input id="instagram" type="text" value="Instagram" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input id="google" type="text" value="Google plus link" pattern="[A-Za-z]{10}" >
+  <br/>
+  <br/>    
+  </div>
+  <hr/> 
+        
+</form>
+
+<div id="spacing">
+<form>
+  Experiance
+  <br/>
+  <br/>    
+    <input id="titleEX" type="text" value="Title" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input id="companyEX" type="text" value="Company name" pattern="[A-Za-z]{10}" >
+  <br/>
+  <br/>
+  <input id="workEX" type="text" value="Work dates" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <textarea id="desEX" rows="10" cols="30"> Description</textarea>>
+  <br/>
+  <br/>    
+  <br/>
+  <br/>    
+    <input id="titleEX1"type="text" value="Title" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input id="companyEX1"type="text" value="Company name" pattern="[A-Za-z]{10}" >
+  <br/>
+  <br/>
+  <input id="workEX1" type="text" value="Work dates" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <textarea id="desEX1" rows="10" cols="30"> Description</textarea>>
+>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+   <input id="titleEX2"type="text" value="Title" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input id="companyEX2"type="text" value="Company name" pattern="[A-Za-z]{10}" >
+  <br/>
+  <br/>
+  <input id="workEX2" type="text" value="Work dates" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <textarea id="desEX2" rows="10" cols="30"> Description</textarea>>
+>
+</form>
+ <hr/>
+ 
+ </div>
+ <div id="spacing">
+<form>    
+ <br/>
+ Pro Skills  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Per Skills  
+<br/>
+<br/>
+ <input id="pro1" type="text" value="Some skill level (number)" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input id="per1" type="text" value="Some skill level (number)" pattern="[A-Za-z]{10}" > 
+<br/>
+<br/>
+ <input id="pro2" type="text" value="Some skill level (number)" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input id="per2" type="text" value="Some skill level (number)" pattern="[A-Za-z]{10}" >  
+<br/>
+<br/>
+ <input id="pro3" type="text" value="Some skill level (number)" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input id="per3" type="text" value="Some skill level (number)" pattern="[A-Za-z]{10}" >  
+    <br/>
+<br/>
+ <input id="pro4" type="text" value="Some skill level (number)" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input id="per4" type="text" value="Some skill level (number)" pattern="[A-Za-z]{10}" >  
+<br/>
+<br/>    
+<hr/>
+<br/>    
+</form>
+    </div>
+	<div id="spacing">
+<form>
+Education
+<br/>
+<br/>
+     <input id="titleED" type="text" value="Title" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input id="placeED" type="text" value="Place" pattern="[A-Za-z]{10}" >
+  <br/>
+  <br/>
+  <input id="dateED" type="text" value="Education date" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <textarea id="desED" rows="10" cols="30"> Description</textarea>>
+  <br/>
+  <br/>    
+  <br/>
+  <br/>    
+     <input id="titleED1" type="text" value="Title" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input id="placeED1" type="text" value="Place" pattern="[A-Za-z]{10}" >
+  <br/>
+  <br/>
+  <input id="dateED1" type="text" value="Education date" pattern="[A-Za-z]{10}">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <textarea id="desED1" rows="10" cols="30"> Description</textarea>>
+  <br/>
+  <br/>   
+  <hr/>
+  <br/>
+  <br/>    
+</form>
+</div>
+<div id="spacing">
+<form>
+Hobbies &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Languages
+<br/>
+<br/>
+<div class="container">
+    <input id="sport" type="checkbox" /> Sport<br/><br/>
+    <input id="reading" type="checkbox" /> Reading<br/><br/>
+    <input id="swimming" type="checkbox" /> Swimming<br/><br/>
+    <input id="programming" type="checkbox" /> Programming<br/><br/>
+    <input id="Sleeping" type="checkbox" /> Sleeping<br/><br/>
+    <input id="doingNothing" type="checkbox" /> Doing nothing<br/><br/>
+</div>    
+ <div id="lan">
+    <input id="hebrew" type="text" value="Hebrew level (number)" pattern="[A-Za-z]{10}" ><br/><br/>
+    <input id="english" type="text" value="English level (number)" pattern="[A-Za-z]{10}" ><br/><br/>
+    <input id="russion" type="text" value="Russion level (number)" pattern="[A-Za-z]{10}" ><br/><br/>
+    <input id="italian" type="text" value="Italian level (number)" pattern="[A-Za-z]{10}" ><br/><br/>
+</div>
+</form>    
+</div>
+</div>
+</body>
+</html>
