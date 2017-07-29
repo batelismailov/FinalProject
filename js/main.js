@@ -46,7 +46,7 @@ $(function(){
 
       });
 
-	  	$.get('/final-project-fullstack/php/proskills.php?user=' + userName, function(data)
+	  	$.get('/FinalProject/php/proskills.php?user=' + userName, function(data)
        { //This code makes an HTTP request to /arik and puts the data in the 'data' variable
 
           console.log('Got data', data); //We just print whatever we got from the server
@@ -64,7 +64,7 @@ $(function(){
        });
 
 
-          $.get('/final-project-fullstack/php/perskills.php?user=' + userName, function(data)
+          $.get('/FinalProject/php/perskills.php?user=' + userName, function(data)
          { //This code makes an HTTP request to /arik and puts the data in the 'data' variable
 
           console.log('Got data', data); //We just print whatever we got from the server
@@ -79,7 +79,26 @@ $(function(){
 			}
 		});
 
-         $.get('/final-project-fullstack/php/experience.php?user=' + userName, function(data)
+         $.get('/FinalProject/php/experience.php?user=' + userId, function(data)
+         { //This code makes an HTTP request to /arik and puts the data in the 'data' variable
+
+          console.log('user experience:', data); //We just print whatever we got from the server
+		  //clear "loading" text
+		  $('#blueTitle').empty();
+		  $('#Title').empty();
+          $('#date').empty();
+		  $('#paragraph').empty();
+
+
+		  for ( $x=0;$x <= data.length; $x++) {
+			$('#blueTitle').append('<li>'+data[$x].blueTitle+'</li>');
+			$('#Title').append('<li>'+data[$x].Title+'</li>');
+            $('#date').append('<li>'+data[$x].date+'</li>');
+            $('#paragraph').append('<li>'+data[$x].paragraph+'</li>');
+			}
+		});
+
+         $.get('/FinalProject/php/education.php?user=' + userName, function(data)
          { //This code makes an HTTP request to /arik and puts the data in the 'data' variable
 
           console.log('Got data', data); //We just print whatever we got from the server
@@ -98,26 +117,7 @@ $(function(){
 			}
 		});
 
-         $.get('/final-project-fullstack/php/education.php?user=' + userName, function(data)
-         { //This code makes an HTTP request to /arik and puts the data in the 'data' variable
-
-          console.log('Got data', data); //We just print whatever we got from the server
-		  //clear "loading" text
-		  $('#blueTitle').empty();
-		  $('#Title').empty();
-          $('#date').empty();
-		  $('#paragraph').empty();
-
-
-		  for ( $x=0;$x <= data.length; $x++) {
-			$('#blueTitle').append('<li>'+data[$x].blueTitle+'</li>');
-			$('#Title').append('<li>'+data[$x].Title+'</li>');
-            $('#date').append('<li>'+data[$x].date+'</li>');
-            $('#paragraph').append('<li>'+data[$x].paragraph+'</li>');
-			}
-		});
-
-        $.get('/final-project-fullstack/php/hobbies.php?user=' + userName, function(data)
+        $.get('/FinalProject/php/hobbies.php?user=' + userName, function(data)
          { //This code makes an HTTP request to /arik and puts the data in the 'data' variable
 
           console.log('Got data', data); //We just print whatever we got from the server
@@ -134,7 +134,7 @@ $(function(){
 		});
 
 
-          $.get('/final-project-fullstack/php/language.php?user=' + userName, function(data)
+          $.get('/FinalProject/php/language.php?user=' + userName, function(data)
          { //This code makes an HTTP request to /arik and puts the data in the 'data' variable
 
           console.log('Got data', data); //We just print whatever we got from the server
