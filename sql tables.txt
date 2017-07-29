@@ -1,0 +1,74 @@
+
+insert into users (firstname,lastname,email,phone,area,title,about) values('batel','ismailov','batel@gmail.com','054-898-8589','tel aviv','very smart person','i like big butts');
+
+select * from users;
+select * from proskills;
+select * from users;
+select * from users;
+select * from users;
+select * from users;
+select * from users;
+
+CREATE TABLE IF NOT EXISTS `users` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(60) NOT NULL,
+  `lastname` varchar(60) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` varchar(24) NOT NULL,
+  `area` varchar(64) NOT NULL,
+  `title` varchar(20) NOT NULL,
+  `about` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `proskills` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` int NOT NULL,
+  `skillname` varchar(20) NOT NULL,
+  `skillvalue` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `perskills` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` int NOT NULL,
+  `skillname` varchar(20) NOT NULL,
+  `skillvalue` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `language` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` int NOT NULL,
+  `languageName` varchar(20) NOT NULL,
+  `languageValue` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `hobbies` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` int NOT NULL,
+  `photo` varchar(20) NOT NULL,
+  `topic` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `education` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` int NOT NULL,
+  `blueTitle` varchar(20) NOT NULL,
+  `Title` varchar(20) NOT NULL,
+  `date` date NOT NULL,
+  `paragraph` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `experience` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` int NOT NULL,
+  `blueTitle` varchar(20) NOT NULL,
+  `Title` varchar(20) NOT NULL,
+  `date` date NOT NULL,
+  `paragraph` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
